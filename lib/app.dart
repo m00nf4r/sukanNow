@@ -8,11 +8,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        colorScheme: ColorScheme.dark(
-          surface: const Color.fromARGB(255, 0, 0, 0),
-        ),
-        useMaterial3: true,
-      ),
+  colorScheme: ColorScheme.dark(
+    surface: const Color.fromARGB(255, 0, 0, 0),
+  ),
+  textTheme: const TextTheme(
+    bodyMedium: TextStyle(color: Colors.white70),
+  ),
+  useMaterial3: true,
+),
       home: const AuthGate(), 
       routes: {
         '/auth-gate': (context) => const AuthGate(), // Define the route
