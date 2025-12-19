@@ -1,3 +1,7 @@
+///MyApp is the root widget of the application,
+///setting up the MaterialApp with a dark theme 
+///and routing to AuthGate as the home screen.
+
 import 'package:flutter/material.dart';
 import 'auth_gate.dart';
 
