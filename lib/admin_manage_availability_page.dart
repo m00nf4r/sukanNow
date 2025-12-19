@@ -299,7 +299,7 @@ class _AdminManageAvailabilityPageState extends State<AdminManageAvailabilityPag
                             borderSide: BorderSide(color: Colors.deepOrange), // Change focused line color
                           ),
                         ),
-                        initialValue: _selectedSport,
+                        value: _selectedSport,
                         onChanged: (value) async {
                           setState(() {
                             _selectedSport = value;
